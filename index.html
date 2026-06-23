@@ -1,91 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waleed Abdullah | HSE Professional</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Include GSAP and Lenis via CDN if required by your original design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Waleed Abdullah | HSE Professional & CertIOSH</title>
+  <meta name="description" content="Waleed Abdullah - Certified HSE Professional specializing in occupational safety, risk assessment, and ISO compliance management.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+<div id="lenis-wrapper">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo"><i class="fas fa-hard-hat"></i> WA.</span>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#awards" class="nav-link">Awards & Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Theme System">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="mobileMenuBtn" class="mobile-btn" aria-label="Toggle Navigation Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="section hero">
+    <div class="container hero-container">
+      <div class="profile-wrapper">
         <img src="myimg.jpg" alt="Waleed Abdullah" class="profile-img">
-        <h1>Waleed Abdullah (CertIOSH)</h1>
-        <p>HSE Professional | IOSH Membership No. 255615</p>
-    </header>
+        <div class="profile-pulse"></div>
+      </div>
+      <h1 class="heading-xl reveal">Waleed Abdullah</h1>
+      <p class="heading-lg text-blue reveal">HSE Professional | CertIOSH | Safety Supervisor</p>
+      <p class="description reveal">Certified Member of IOSH (UK). Highly passionate and adaptable HSE professional committed to fostering safe, sustainable work environments and leading impactful safety culture projects.</p>
+      <div class="button-group reveal">
+        <a href="#contact" class="btn btn-primary nav-link">Contact Me</a>
+        <a href="https://www.linkedin.com/in/waleed-abdullah-345580297" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Highly passionate and adaptable HSE professional with a robust work ethic, committed to fostering safe and sustainable work environments. Eager to embrace new challenges and lead impactful projects that enhance organizational safety culture and operational excellence.</p>
-    </section>
-
-    <section id="experience">
-        <h2>Work Experience</h2>
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="heading-xxl section-title reveal">Professional Experience</h2>
+      <div class="experience-grid">
         
-        <div class="job">
-            <h3>Safety Supervisor | Trojena West Port Project</h3>
-            <p><strong>[ 06/08/2024 – Current ]</strong></p>
-            <ul>
-                <li>Monitor and assess hazardous situations at the project site.</li>
-                <li>Develop safety policies and procedures tailored to project needs.</li>
-                <li>Conduct regular inspections, risk assessments, and Toolbox talks.</li>
-                <li>Investigate accidents and incidents to prevent recurrence.</li>
-            </ul>
+        <div class="experience-card card-blue reveal">
+          <div class="card-glow"></div>
+          <div class="card-marker"></div>
+          <div class="experience-header">
+            <div class="experience-title-wrapper">
+              <h3 class="card-title">Safety Supervisor</h3>
+              <p class="card-company">Trojena West Port Project</p>
+              <p class="card-date"><i class="far fa-calendar-alt"></i> Aug 2024 – Present</p>
+              <p class="section-desc">Stationed at the Trojena project site. Monitoring and assessing hazardous situations while developing safety policies and procedures tailored to strict project needs.</p>
+            </div>
+            <button class="exp-accordion-toggle" aria-label="Toggle Experience Details"><i class="fas fa-chevron-down"></i></button>
+          </div>
+          
+          <div class="exp-accordion-content">
+            <div class="card-content">
+              <h4 class="subsection-title"><i class="fas fa-clipboard-check"></i> Core Responsibilities:</h4>
+              <ul class="feature-list">
+                <li><strong>Hazard Mitigation:</strong> Conduct regular inspections and comprehensive risk assessments to identify potential hazards on-site.</li>
+                <li><strong>Training & Awareness:</strong> Provide targeted safety training and conduct daily Toolbox talks to enhance worker awareness.</li>
+                <li><strong>Incident Management:</strong> Investigate accidents and incidents meticulously, documenting findings to prevent recurrence.</li>
+                <li><strong>Safety Culture:</strong> Promote a proactive culture of safety through effective communication and engagement with all workers.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="job">
-            <h3>Safety Supervisor | Spacemaker at Neom 10K NRC-1</h3>
-            <p><strong>[ 29/01/2024 – 01/08/2024 ]</strong></p>
-            <ul>
-                <li>Ensured stringent adherence to safety protocols and regulations in NEOM City.</li>
-                <li>Oversaw risk assessments, incident reporting, and safety training initiatives.</li>
-                <li>Collaborated with cross-functional teams to implement effective safety measures.</li>
-            </ul>
+        <div class="experience-card card-purple reveal">
+          <div class="card-glow"></div>
+          <div class="card-marker"></div>
+          <div class="experience-header">
+            <div class="experience-title-wrapper">
+              <h3 class="card-title">Safety Supervisor</h3>
+              <p class="card-company">Spacemaker at Neom 10K NRC-1</p>
+              <p class="card-date"><i class="far fa-calendar-alt"></i> Jan 2024 – Aug 2024</p>
+              <p class="section-desc">Ensured stringent adherence to safety protocols and regulations as a Safety Officer within the NEOM City development sector.</p>
+            </div>
+            <button class="exp-accordion-toggle" aria-label="Toggle Experience Details"><i class="fas fa-chevron-down"></i></button>
+          </div>
+          
+          <div class="exp-accordion-content">
+            <div class="card-content">
+              <h4 class="subsection-title"><i class="fas fa-hard-hat"></i> Site Operations:</h4>
+              <ul class="feature-list">
+                <li><strong>Compliance:</strong> Maintained compliance with local and international safety standards, ensuring the well-being of all personnel.</li>
+                <li><strong>Operational Oversight:</strong> Oversaw complex risk assessments, detailed incident reporting, and mandatory safety training initiatives.</li>
+                <li><strong>Team Collaboration:</strong> Collaborated with cross-functional teams to implement effective safety measures and foster proactive hazard prevention.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="job">
-            <h3>Sr. HSE Officer | Nesma & Partner (KFAA Al Majmaah)</h3>
-            <p><strong>[ 09/08/2022 – 24/01/2024 ]</strong></p>
-            <ul>
-                <li>Oversee safety protocols and prepare comprehensive safety reports.</li>
-                <li>Coordinate and oversee the training of all staff (temporary, contract, and permanent).</li>
-                <li>Utilize data analysis to track KPIs and demonstrate commitment to safety.</li>
-                <li>Interface with regulatory bodies regarding safety and health standards.</li>
-            </ul>
+        <div class="experience-card card-emerald reveal">
+          <div class="card-glow"></div>
+          <div class="card-marker"></div>
+          <div class="experience-header">
+            <div class="experience-title-wrapper">
+              <h3 class="card-title">Sr. HSE Officer</h3>
+              <p class="card-company">Nesma & Partner at KFAA Al Majmaah NAS JV</p>
+              <p class="card-date"><i class="far fa-calendar-alt"></i> Aug 2022 – Jan 2024</p>
+              <p class="section-desc">Oversaw rigorous safety protocols to ensure timely completion of project tasks, prevention of hazards, and precise safety reporting.</p>
+            </div>
+            <button class="exp-accordion-toggle" aria-label="Toggle Experience Details"><i class="fas fa-chevron-down"></i></button>
+          </div>
+          
+          <div class="exp-accordion-content">
+            <div class="card-content">
+              <h4 class="subsection-title"><i class="fas fa-chart-line"></i> Strategic Governance:</h4>
+              <ul class="feature-list">
+                <li><strong>Staff Preparedness:</strong> Coordinated and oversaw training for temporary, contract, and permanent employees.</li>
+                <li><strong>Metric Tracking:</strong> Identified KPIs to support safety initiatives, utilizing data analysis to track the organization's safety ROI.</li>
+                <li><strong>Regulatory Interface:</strong> Interfaced directly with regulatory bodies (Department of Labor) maintaining clear communication on health standards.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="job">
-            <h3>HSE Officer | Fajar Al Sharq Construction Co.LLC (FASCO)</h3>
-            <p><strong>[ 05/11/2019 – 07/07/2022 ]</strong></p>
-            <ul>
-                <li>Developed, implemented, and maintained HSE policies and procedures.</li>
-                <li>Conducted risk assessments, site inspections, and incident investigations.</li>
-            </ul>
+        <div class="experience-card card-cyan reveal">
+          <div class="card-glow"></div>
+          <div class="card-marker"></div>
+          <div class="experience-header">
+            <div class="experience-title-wrapper">
+              <h3 class="card-title">HSE Officer</h3>
+              <p class="card-company">Fajar Al Sharq Construction Co. (FASCO) - Dubai</p>
+              <p class="card-date"><i class="far fa-calendar-alt"></i> Nov 2019 – Jul 2022</p>
+              <p class="section-desc">Led the core development, implementation, and maintenance of HSE policies across extensive construction operations in the UAE.</p>
+            </div>
+            <button class="exp-accordion-toggle" aria-label="Toggle Experience Details"><i class="fas fa-chevron-down"></i></button>
+          </div>
+          
+          <div class="exp-accordion-content">
+            <div class="card-content">
+              <h4 class="subsection-title"><i class="fas fa-shield-alt"></i> Foundation Operations:</h4>
+              <ul class="feature-list">
+                <li><strong>Policy Enforcement:</strong> Responsible for developing and deploying updated HSE procedures matching UAE infrastructure codes.</li>
+                <li><strong>Risk Assessment:</strong> Conducted routine risk assessments, physical site inspections, and root cause investigations for incidents.</li>
+                <li><strong>Awareness Programs:</strong> Built out fundamental training and awareness pipelines for incoming operational employees.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <section id="education">
-        <h2>Education & Training</h2>
-        <ul>
-            <li><strong>NVQ Level 6 in OSH Practice</strong> – Pro Qual Awarding Body</li>
-            <li><strong>DAE Civil Engineering</strong> – Punjab Board of Technical Education</li>
-            <li><strong>NEBOSH IGC1 and IGC2</strong> – Wish Institute</li>
-            <li><strong>OSHA 30-hour General Industry</strong> – Be Safe Training Institute</li>
-            <li><strong>IOSH Managing Safely</strong> – Be Safe Training Institute</li>
-        </ul>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="certifications-awards">
-        <h2>Certifications & Honours</h2>
-        <ul>
-            <li><strong>ISO Lead Implementer:</strong> 9001:2015, 14001:2015, and 45001:2018.</li>
-            <li><strong>Specialized Certs:</strong> AI Safety Professional, Root Cause Analysis, Fire Safety Management, COSHH Risk Assessor, and Environmental Impact Assessment (EIA).</li>
-            <li><strong>Awards:</strong> 5 Million Safe Man-Hours (King Faisal Air Academy), 2 Million Safe Man-Hours (Trojena West Port), and Project NEOM10K Completion Appreciation.</li>
-            <li><strong>Field Skills:</strong> Confined Space Entry, First Aid, CPR & PTW.</li>
-        </ul>
-    </section>
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2 class="heading-xxl section-title reveal">Professional Certifications</h2>
+      <div class="cert-grid">
+        
+        <div class="cert-card cert-blue reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-certificate cert-icon"></i>
+            <span class="cert-badge-type premium">Lead Auditor</span>
+          </div>
+          <h3 class="cert-title">Integrated Management System (IMS)</h3>
+          <p class="cert-id"><i class="far fa-clock"></i> ISO Certified Professional</p>
+          <p class="cert-desc-short">Lead Implementer & Internal Auditor for Core ISO Standards.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Certified Lead Implementer and Internal Auditor for ISO 9001:2015 (Quality), ISO 14001:2015 (Environmental), and ISO 45001:2018 (Occupational Health & Safety). Deep expertise in international standard-compliant management systems.</p>
+            <div class="cert-tags">
+              <span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-graduation-cap cert-icon"></i>
+            <span class="cert-badge-type expert">Level 6</span>
+          </div>
+          <h3 class="cert-title">NVQ Level 6 in OSH Practice</h3>
+          <p class="cert-id"><i class="far fa-calendar-alt"></i> ProQual / Ofqual</p>
+          <p class="cert-desc-short">High-level occupational safety and health practice certification.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Advanced diploma (EQF Level 6) awarded by Pro Qual and regulated by Ofqual, demonstrating senior-level competence in formulating and driving safety practices.</p>
+            <div class="cert-tags">
+              <span>NVQ L6</span><span>OSH Practice</span><span>ProQual</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+            <a href="https://www.proqualab.com/" target="_blank" class="cert-link">Provider <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-shield-virus cert-icon"></i>
+            <span class="cert-badge-type intermediate">Core</span>
+          </div>
+          <h3 class="cert-title">NEBOSH IGC1 and IGC2</h3>
+          <p class="cert-id"><i class="far fa-building"></i> Wish Institute</p>
+          <p class="cert-desc-short">International General Certificate in Occupational Health & Safety.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Global standard qualification assessing management of health and safety, and practical application of risk control within international frameworks.</p>
+            <div class="cert-tags">
+              <span>NEBOSH</span><span>IGC1</span><span>IGC2</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-industry cert-icon"></i>
+            <span class="cert-badge-type intermediate">Essential</span>
+          </div>
+          <h3 class="cert-title">OSHA 30-Hour General Industry</h3>
+          <p class="cert-id"><i class="far fa-building"></i> Be Safe Training Institute</p>
+          <p class="cert-desc-short">Comprehensive safety training for general industry hazards.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Extensive 30-hour certification covering advanced recognition, avoidance, abatement, and prevention of safety and health hazards in workplaces.</p>
+            <div class="cert-tags">
+              <span>OSHA</span><span>General Industry</span><span>Hazard Prevention</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-leaf cert-icon"></i>
+            <span class="cert-badge-type foundation">Specialized</span>
+          </div>
+          <h3 class="cert-title">Environmental Impact Assessment (EIA)</h3>
+          <p class="cert-id"><i class="far fa-check-circle"></i> Certified</p>
+          <p class="cert-desc-short">Sustainable project planning and ecological risk mapping.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Comprehensive understanding of EIA principles and processes to ensure sustainable project planning and minimize environmental disruption during operations.</p>
+            <div class="cert-tags">
+              <span>EIA</span><span>Sustainability</span><span>Environment</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-header">
+            <i class="fas fa-robot cert-icon"></i>
+            <span class="cert-badge-type foundation">Modern Tech</span>
+          </div>
+          <h3 class="cert-title">AI Safety Professional</h3>
+          <p class="cert-id"><i class="far fa-check-circle"></i> Certified</p>
+          <p class="cert-desc-short">Responsible technology implementation and AI risk mapping.</p>
+          
+          <div class="cert-accordion-content">
+            <p class="cert-desc-full">Demonstrated proficiency in AI safety principles and practices, ensuring responsible technology implementation across modern operational sites.</p>
+            <div class="cert-tags">
+              <span>AI Safety</span><span>Tech Risk</span>
+            </div>
+          </div>
+          
+          <div class="cert-footer-actions">
+            <button class="cert-expand-toggle" aria-label="Toggle Details">Read More <i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section projects">
+    <div class="container">
+      <h2 class="heading-xxl section-title reveal">Honours, Awards & Education</h2>
+      <div class="project-grid">
+
+        <div class="project-card project-blue large reveal">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-title-wrapper">
+              <h3 class="project-title">5 Million Safe Man-Hours Achieved</h3>
+              <p class="project-desc">King Faisal Air Academy, Al Majmmah, KSA</p>
+            </div>
+            <div class="header-actions">
+              <span class="badge badge-blue">Milestone Award</span>
+              <button class="accordion-toggle" aria-label="Toggle Details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+          
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <h4 class="subsection-title"><i class="fas fa-trophy"></i> Achievement Details:</h4>
+              <p style="color: var(--text-muted); margin-top: 10px;">Led the site achievement of 5 million Lost Time Incident (LTI) free man-hours, demonstrating an unwavering commitment to maintaining the highest safety standards at scale.</p>
+              <div class="status-badge" style="margin-top: 15px;">
+                <span class="status-verified"><i class="fas fa-check-circle"></i> LTI-Free Record Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-emerald reveal">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-title-wrapper">
+              <h3 class="project-title">2 Million Safe Man-Hours Achieved</h3>
+              <p class="project-desc">Trojena West Port, NEOM, KSA</p>
+            </div>
+            <div class="header-actions">
+              <span class="badge badge-emerald">Milestone</span>
+              <button class="accordion-toggle" aria-label="Toggle Details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <h4 class="subsection-title"><i class="fas fa-shield-alt"></i> Achievement Details:</h4>
+              <p style="color: var(--text-muted); margin-top: 10px;">Contributed substantially to reaching 2 million LTI-free man-hours on the highly complex Trojena West Port infrastructure project.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-cyan reveal">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-title-wrapper">
+              <h3 class="project-title">Academic & specialized Training</h3>
+              <p class="project-desc">Core educational background supporting safety logic.</p>
+            </div>
+            <div class="header-actions">
+              <span class="badge badge-cyan">Academics</span>
+              <button class="accordion-toggle" aria-label="Toggle Details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <h4 class="subsection-title"><i class="fas fa-university"></i> Background:</h4>
+              <ul class="feature-list">
+                <li><strong>DAE Civil Engineering:</strong> Punjab Board of Technical Education, Lahore (2016 – 2019).</li>
+                <li><strong>IOSH Managing Safely:</strong> Be Safe Training Institute.</li>
+                <li><strong>Additional Certifications:</strong> Root Cause Analysis, Fire Safety Management, COSHH Risk Assessor, Confined Space Entry, First Aid, CPR & PTW.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="heading-xxl section-title section-title-white reveal">Secure Contact Channels</h2>
+      <div class="contact-grid">
+        <div class="contact-item reveal">
+          <i class="fas fa-phone contact-icon"></i>
+          <p class="contact-label">Secure Direct Mobile</p>
+          <p class="contact-value">+92 318 5125797</p>
+          <p class="contact-value" style="font-size: 0.9rem; color: var(--text-muted); margin-top: -10px;">+966 539332039 / +966 550703950</p>
+        </div>
+        <div class="contact-item reveal">
+          <i class="fas fa-envelope contact-icon"></i>
+          <p class="contact-label">Professional Mail</p>
+          <div class="copy-wrapper">
+            <a href="mailto:waleedhse23@gmail.com" class="contact-value-link">waleedhse23@gmail.com</a>
+            <button class="copy-btn" data-copy="waleedhse23@gmail.com" aria-label="Copy Email"><i class="far fa-copy"></i></button>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <p class="contact-label">Professional Network</p>
+          <div class="copy-wrapper">
+            <a href="https://www.linkedin.com/in/waleed-abdullah-345580297" target="_blank" class="contact-value-link">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <span class="footer-logo"><i class="fas fa-hard-hat"></i> WA.</span>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#certifications" class="footer-link">Certifications</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Waleed Abdullah. Health, Safety & Environment Operations.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
