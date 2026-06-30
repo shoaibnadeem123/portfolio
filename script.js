@@ -46,11 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 4. Smooth Scrolling for Navbar Links
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link, .footer-link');
   
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      // Check if it's an internal hash link
       const targetId = link.getAttribute('href');
       if (targetId && targetId.startsWith('#')) {
         e.preventDefault(); 
@@ -73,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (triggerElement) {
       triggerElement.addEventListener('click', (e) => {
-        // Prevent triggering if user clicks the 'Verify' button inside the card
-        if (e.target.closest('.cert-link')) return;
+        // Prevent triggering if user clicks the link/pdf inside the card
+        if (e.target.closest('.pdf-fallback-link, .cert-link')) return;
 
         e.stopPropagation();
         const isCurrentlyExpanded = card.classList.contains('is-expanded');
