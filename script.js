@@ -72,7 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (triggerElement) {
       triggerElement.addEventListener('click', (e) => {
-        if (e.target.closest('.cert-action-link, .pdf-viewer-container')) return;
+        // Prevent toggle if clicking on the verify button
+        if (e.target.closest('.cert-verify-btn')) return;
 
         e.stopPropagation();
         const isCurrentlyExpanded = card.classList.contains('is-expanded');
