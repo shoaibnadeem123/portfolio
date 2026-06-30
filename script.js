@@ -62,18 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 5. Accordion Logic
-  const cards = document.querySelectorAll('.experience-card, .project-card, .cert-card');
+  // 5. Accordion Logic for text-content based dropdown items
+  const cards = document.querySelectorAll('.experience-card, .project-card');
 
   cards.forEach(card => {
-    const toggle = card.querySelector('.exp-accordion-toggle, .accordion-toggle, .cert-expand-toggle');
-    const header = card.querySelector('.experience-header, .project-header, .cert-header');
+    const toggle = card.querySelector('.exp-accordion-toggle, .accordion-toggle');
+    const header = card.querySelector('.experience-header, .project-header');
     const triggerElement = toggle || header;
 
     if (triggerElement) {
       triggerElement.addEventListener('click', (e) => {
-        // Prevent triggering if user clicks the link/pdf inside the card
-        if (e.target.closest('.pdf-fallback-link, .cert-link')) return;
+        if (e.target.closest('.cert-action-link, .pdf-viewer-container')) return;
 
         e.stopPropagation();
         const isCurrentlyExpanded = card.classList.contains('is-expanded');
